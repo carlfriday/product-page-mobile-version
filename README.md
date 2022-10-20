@@ -1,0 +1,2 @@
+
+product-page-mobile-version
