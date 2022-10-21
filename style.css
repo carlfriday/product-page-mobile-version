@@ -21,29 +21,30 @@ body{
    align-items: center;
 }
 .container{
- margin: 10px 20px auto 10px;
+ margin: 10px 40px auto 40px;
  padding:0 12px;
+ border-radius: 15px;
 }
 .wholebox{
  max-width: 375px;
  display: flex;
  flex-direction: column;
  gap: 10px;
- background-color: white;
- border-radius: 15px;
+ background-color: rgb(251, 254, 255);
+ border-radius: 10px;
 max-height: 900px;
+overflow: hidden;
 }
 .img img{
 width: 100%;
-border-radius: 15px;
 }
+
 
 .cardbody{
  padding: 10px;
  display: flex;
 flex-direction: column;
 justify-content: space-between;
-
 }
 
 h6.pro-cat{
@@ -52,12 +53,12 @@ h6.pro-cat{
  font-size: 13px;
  color:hsl(228, 12%, 48%) ;
  font-weight: 500;
- margin-bottom: 10px;
+ margin-bottom: 15px;
 }
 h2.pro-name{
  font-family: 'Fraunces';
    serif;
-   font-size: 30px;
+   font-size: 26px;
    line-height: 1em;
    color:hsl(212, 21%, 14%);
    margin-bottom: 10px;
@@ -65,8 +66,10 @@ h2.pro-name{
 
 p.pro-des{
   color: hsl(228, 12%, 48%);
-  line-height: 1.6em;
-  margin-bottom: 10px;
+  line-height: 1.5em;
+  margin-bottom: 15px;
+  
+  font-size: 12px;
 }
 
 p.current-price{
@@ -81,12 +84,13 @@ p.old-price{
  text-decoration: line-through;
  display: flex;
 align-items: center;
+font-size: 10px;
 }
 
 .price{
  display: flex;
 justify-items: center;
- margin-bottom: 10px;
+ margin-bottom: 12px;
 
 }
 button.cart{
@@ -105,3 +109,13 @@ button.cart:hover{
 button.cart i{
 padding-right: 7px;
 }
+
+@media only screen and (max-width:375px) {
+  .container{
+    margin: 10px 40px auto 40px;
+  }
+    .cardbody {
+      padding: 10px; 
+    }
+
+     }
